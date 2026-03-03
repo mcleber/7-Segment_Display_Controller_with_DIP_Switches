@@ -66,7 +66,7 @@ Verilog_7-Segment_Display_with_DIP_Switches/
 
 ## Hardware Setup
 
-### Circuit Diagram
+### Schematics
 <p align="center">
   <img src="assets/encoder_decoder_bcd_esquematico.png" width="800" alt="Circuit Diagram">
 </p>
