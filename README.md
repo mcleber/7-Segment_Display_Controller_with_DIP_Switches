@@ -1,4 +1,4 @@
-# 💡 7-Segment Display Controller with DIP Switches
+# 7-Segment Display Controller with DIP Switches
 ### BCD Decoder and Display Driver using Verilog on FPGA
 
 ![Platform](https://img.shields.io/badge/Platform-FPGA-blue)
@@ -11,7 +11,7 @@
 
 ---
 
-## 📖 Overview
+## Overview
 
 This project implements a BCD (Binary-Coded Decimal) decoder using Verilog for FPGA. It reads DIP switch input and drives a common-cathode 7-segment display, showing digits 0–8 or ‘E’ for invalid input combinations.
 
@@ -24,7 +24,7 @@ Key learning objectives:
 
 ---
 
-## 🧰 Hardware Required
+## Hardware Required
 
 ### Electronics
 - 1 × Tang Primer 20K FPGA (GW2A-LV18PG256C8/I7) with Dock
@@ -40,7 +40,7 @@ Key learning objectives:
 
 ---
 
-## 📷 Hardware Setup
+## Hardware Setup
 
 ### Circuit Diagram
 <p align="center">
@@ -49,7 +49,7 @@ Key learning objectives:
 
 ---
 
-## 📊 Truth Tables
+## Truth Tables
 
 The developed system operates based on two fundamental truth tables that define the entire behavior of the circuit.  
 
@@ -78,13 +78,13 @@ These tables serve as essential references both for the Verilog code implementat
 
 ---
 
-## 🔌 Verilog Code and Constraints
+## Verilog Code and Constraints
 
 Available in the `src` and `constraints` directories.
 
 ---
 
-## 🧠 How It Works
+## How It Works
 
 1. Read DIP switch input
 2. Convert the binary input to decimal (BCD)
@@ -94,7 +94,7 @@ Available in the `src` and `constraints` directories.
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 Verilog_7-Segment_Display_with_DIP_Switches/
@@ -118,7 +118,7 @@ Verilog_7-Segment_Display_with_DIP_Switches/
 
 ---
 
-## 🎮 Features
+## Features
 
 - Modular Verilog code structure
 - Full BCD decoding (0–8)
@@ -128,7 +128,7 @@ Verilog_7-Segment_Display_with_DIP_Switches/
 
 ---
 
-## 🚀 Future Improvements
+## Future Improvements
 
 - Support for multiple 7-segment displays
 - Dynamic brightness control using PWM
@@ -137,24 +137,24 @@ Verilog_7-Segment_Display_with_DIP_Switches/
 
 ---
 
-## ⚠️ Common Errors and Solutions
+## Common Errors and Solutions
 
 During development, I encountered some practical issues that may occur with any beginner:
 
-**Incorrect use of reserved pins:**  
+- **Incorrect use of reserved pins:**  
 During signal mapping, an SPI-dedicated pin was incorrectly assigned to the display LEDs, triggering a ‘cannot be placed according to constraint’ synthesis error. The issue was resolved by reassigning the connection to an available GPIO pin, following the Dock’s pinout documentation.
 
-**Reversed wiring on the display:**  
+- **Reversed wiring on the display:**  
 One of the segment wires was connected incorrectly, causing incorrect numbers to be displayed. After reviewing the segment order (a–g), I corrected the connections, and the display started working correctly.
 
 ---
 
-## 📜 License
+## License
 
 This project is open-source and available under the GPL-3.0 License.
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 Developed as an FPGA learning project. Strongly inspired by the "cistern" example from the book Eletrônica Digital, Verilog e FPGA.
