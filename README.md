@@ -54,8 +54,8 @@ Verilog_7-Segment_Display_with_DIP_Switches/
 - 1 × Tang Primer 20K FPGA (GW2A-LV18PG256C8/I7) with Dock
 - 1 × Common-cathode 7-segment display
 - 1 × 8-position DIP switch
-- 7 × Current-limiting resistors (~150Ω)
-- 8 × Pull-down resistors (10 kΩ)
+- 7 × ~150Ω resistors (current-limiting resistors)
+- 8 × 10 kΩ resistors (pull-down resistors)
 
 ### Miscellaneous
 - Jumper wires
